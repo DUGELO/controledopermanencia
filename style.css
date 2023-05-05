@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 6px;
+    border-radius: 8px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    box-shadow: 0 0 40px 40px green inset;
+    color: #FFFFFF;
+}
+
+.button1 {
+    margin-right: 0.5%;
+    border: none;
+    color: black;
+    padding: 6px;
+    border-radius: 8px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.button1:hover {
+    box-shadow: 0 0 40px 40px green inset;
+    color: #FFFFFF;
+}
+
+.buttondel {
+    margin-left: 1%;
+    border: none;
+    color: black;
+    padding: 6px;
+    border-radius: 8px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.buttondel:hover {
+    box-shadow: 0 0 40px 40px red inset;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    margin-right: 50px;
+}
+
+main img {
+    width: 2%;
+    height: 2%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icon {
+    margin-left: 5px;
+    width: 1%;
+    height: 2%;
+    background-color: #FFFFFF;
+    position: absolute;
+}
+
+#form-container {
+    margin-top: 2%;
+}
+
+#autoridade-form {
+    margin-top: 2%;
+}
+
+#form-button {
+    background-color: gainsboro;
+}

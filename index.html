@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Controle do Permanência
+    </title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+<body>
+    <main>
+        <div>
+            <h1 class="pr">Controle do Permanência</h1>
+            <br>
+            <div id="pai">
+                <span>
+                    <h3>GEN FURLAN <img id="furlan-arrow" src="imagens/direita.png" alt="imagem"></h3>
+                    <button class="button" data-direction="esquerda"
+                        onclick="changeArrow('furlan-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                    <button class="button" data-direction="direita"
+                        onclick="changeArrow('furlan-arrow', this.getAttribute('data-direction'))">Direita</button>
+                    <button class="button" data-direction="desceu"
+                        onclick="changeArrow('furlan-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                </span>
+
+                <span>
+                    <h3>GEN DAHMER <img id="dahmer-arrow" src="imagens/direita.png" alt="imagem"></h3>
+                    <button class="button" data-direction="esquerda"
+                        onclick="changeArrow('dahmer-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                    <button class="button" data-direction="direita"
+                        onclick="changeArrow('dahmer-arrow', this.getAttribute('data-direction'))">Direita</button>
+                    <button class="button" data-direction="desceu"
+                        onclick="changeArrow('dahmer-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                </span>
+
+                <span>
+                    <h3>GEN LUÍS CARLOS <img id="luiscarlos-arrow" src="imagens/direita.png" alt="imagem"></h3>
+                    <button class="button" data-direction="esquerda"
+                        onclick="changeArrow('luiscarlos-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                    <button class="button" data-direction="direita"
+                        onclick="changeArrow('luiscarlos-arrow', this.getAttribute('data-direction'))">Direita</button>
+                    <button class="button" data-direction="desceu"
+                        onclick="changeArrow('luiscarlos-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                </span>
+
+                <span>
+                    <h3>CEL GILSON <img id="gilson-arrow" src="imagens/direita.png" alt="imagem"></h3>
+                    <button class="button" data-direction="esquerda"
+                        onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                    <button class="button" data-direction="direita"
+                        onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Direita</button>
+                    <button class="button" data-direction="desceu"
+                        onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                </span>
+
+                <span>
+                    <h3>CEL FARIA <img id="faria-arrow" src="imagens/direita.png" alt="imagem"></h3>
+                    <button class="button" data-direction="esquerda"
+                        onclick="changeArrow('faria-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                    <button class="button" data-direction="direita"
+                        onclick="changeArrow('faria-arrow', this.getAttribute('data-direction'))">Direita</button>
+                    <button class="button" data-direction="desceu"
+                        onclick="changeArrow('faria-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                </span>
+
+                <span>
+                    <h3>ADJ CMDO <img id="adj-arrow" src="imagens/direita.png" alt="imagem"></h3>
+                    <button class="button" data-direction="esquerda"
+                        onclick="changeArrow('adj-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                    <button class="button" data-direction="direita"
+                        onclick="changeArrow('adj-arrow', this.getAttribute('data-direction'))">Direita</button>
+                    <button class="button" data-direction="desceu"
+                        onclick="changeArrow('adj-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                </span>
+            </div>
+            <div id="form-container">
+                <button id="form-button" class="button" onclick="showForm()">Adicionar autoridade</button>
+            </div>
+
+            <div id="autoridade-form" style="display:none;">
+                <input type="text" id="nome-autoridade" placeholder="Nome da autoridade" autofocus>
+                <button class="button" onclick="addAutoridade()">Adicionar</button>
+                <button class="button" onclick="cancelar()">Cancelar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <hr style="margin-top:50px;" />
+        <p class="text-center">&copy Feito por: SD ÂNGELO<img class="icon" src="imagens/person-military-rifle-solid.svg"
+                alt="">
+        </p>
+    </footer>
+
+</body>
+
+</html>
