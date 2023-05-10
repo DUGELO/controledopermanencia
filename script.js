@@ -2,11 +2,11 @@ function changeArrow(imgId, direction) {
     // função para mudar a seta
     var arrow = document.getElementById(imgId);
     if (direction === "direita") {
-        arrow.src = "direita.png";
+        arrow.src = "imagens/direita.png";
     } else if (direction === "esquerda") {
-        arrow.src = "esquerda.png";
+        arrow.src = "imagens/esquerda.png";
     } else if (direction === "desceu") {
-        arrow.src = "desceu.png";
+        arrow.src = "imagens/desceu.png";
     }
 }
 
