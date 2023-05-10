@@ -5,6 +5,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+main img {
+    width: 2%;
+    height: 2%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .button {
     border: none;
     color: black;
@@ -71,13 +78,6 @@ body {
 .image-container {
     position: relative;
     margin-right: 50px;
-}
-
-main img {
-    width: 2%;
-    height: 2%;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .icon {
