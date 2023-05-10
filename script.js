@@ -23,7 +23,7 @@ function addAutoridade() {
     var nomeAutoridade = document.getElementById('nome-autoridade').value;
 
     // prosseguir com a adição da nova autoridade
-    var novoCodigoHTML = '<span><h3>' + nomeAutoridade + ' <img id="' + nomeAutoridade + '-arrow\" src="direita.png" alt="imagem"></h3><button class="button1" data-direction="esquerda" onclick="changeArrow(\'' + nomeAutoridade + '-arrow\', this.getAttribute(\'data-direction\'))">Esquerda</button1><button class="button1" data-direction="direita" onclick="changeArrow(\'' + nomeAutoridade + '-arrow\', this.getAttribute(\'data-direction\'))">Direita</button><button class="button1" data-direction="desceu" onclick="changeArrow(\'' + nomeAutoridade + '-arrow\', this.getAttribute(\'data-direction\'))">Desceu</button><button class="buttondel" onclick="excluirAutoridade()">Excluir</button></span>';
+    var novoCodigoHTML = '<span><h3>' + nomeAutoridade + ' <img id="' + nomeAutoridade + '-arrow\"></h3><button class="button1" data-direction="esquerda" onclick="changeArrow(\'' + nomeAutoridade + '-arrow\', this.getAttribute(\'data-direction\'))">Esquerda</button1><button class="button1" data-direction="direita" onclick="changeArrow(\'' + nomeAutoridade + '-arrow\', this.getAttribute(\'data-direction\'))">Direita</button><button class="button1" data-direction="desceu" onclick="changeArrow(\'' + nomeAutoridade + '-arrow\', this.getAttribute(\'data-direction\'))">Desceu</button><button class="buttondel" onclick="excluirAutoridade()">Excluir</button></span>';
     document.getElementById('pai').insertAdjacentHTML('beforeend', novoCodigoHTML);
 
     // redefinir o formulário
