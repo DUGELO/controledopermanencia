@@ -1,6 +1,5 @@
 var autoridadesExistem = [];
 
-
 function changeArrow(imgId, direction) {
     // função para mudar a seta
     var arrow = document.getElementById(imgId);
