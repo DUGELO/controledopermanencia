@@ -5,7 +5,8 @@ var estados = {
     estadoVch: false,
     estadoChgpg: false,
     estadoChgab: false,
-    estadoAdj: false
+    estadoAdj: false,
+    estadoVisitante: false
 }
 
 function changeArrow(imgId, direction) {
@@ -81,7 +82,7 @@ function addAutoridade() {
         <div class="setaebotao">
             <img class='seta visitante-arrow' id="${nomeAutoridade}-arrow">
             <button class="estado" id="estado"
-            onclick="changeEstado()">
+            onclick="changeEstado('estadoVisitante')">
                 Ausente
             </button>
         </div>`;
