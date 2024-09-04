@@ -1,4 +1,12 @@
 var autoridadesExistem = [];
+let ausente = false;
+var estados = {
+    estadoCh: false,
+    estadoVch: false,
+    estadoChgpg: false,
+    estadoChgab: false,
+    estadoAdj: false
+}
 
 function changeArrow(imgId, direction) {
     // função para mudar a seta
@@ -12,6 +20,23 @@ function changeArrow(imgId, direction) {
         arrow.src = "icons\\desceu.png";
     }
 
+}
+
+//função para mudar o estado da autoridade de ausente para presente e vice-versa
+function changeEstado(estadoId) {
+    var estado = document.getElementById(estadoId);
+    if(estados[estadoId]===false) {
+        estado.style.background = '#26a32e';
+        estado.style.boxShadow = '0px 0px 6px 0 #47d751';
+        estado.textContent = 'Presente';
+        estados[estadoId] = !estados[estadoId];
+    } else if (estados[estadoId]===true) {
+        estado.style.background = '#d30000';
+        estado.style.boxShadow = '0px 0px 6px 0 #ff0000';
+        estado.textContent = 'Ausente';
+        estados[estadoId] = !estados[estadoId];
+    }
+    
 }
 
 function showForm() {
@@ -53,7 +78,13 @@ function addAutoridade() {
             <button class="button1" data-direction="desceu" onclick="changeArrow('${nomeAutoridade}-arrow', 'desceu')">Desceu</button>
             <button class="buttondel button1" onclick="excluirAutoridade()">Excluir</button>
         </div>
-        <img class='seta  visitante-arrow' id="${nomeAutoridade}-arrow">`;
+        <div class="setaebotao">
+            <img class='seta visitante-arrow' id="${nomeAutoridade}-arrow">
+            <button class="estado" id="estado"
+            onclick="changeEstado()">
+                Ausente
+            </button>
+        </div>`;
 
     // Adicione o novo span ao contêiner 'one'
     document.getElementById('one').appendChild(novoSpan);

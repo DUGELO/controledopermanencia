@@ -17,7 +17,7 @@
             <h1 class="pr">Controle do Permanência</h1>
             <br>
                 <div id="one" class="one">
-                    <span class="a1">
+                    <span class="card">
                         <img class="fotos" src="imagens\gen_furlan.jpeg" alt="GEN FURLAN"><h3 class="nome1"> GEN FURLAN </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
@@ -27,10 +27,16 @@
                             <button class="button" data-direction="desceu"
                                 onclick="changeArrow('furlan-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
-                            <img class='seta seta1' id="furlan-arrow">  
+                        <div class="setaebotao">
+                            <img class='seta seta1' id="furlan-arrow">
+                            <button class="estadoCardHtml" id="estadoCh"
+                            onclick="changeEstado('estadoCh')">
+                                Ausente
+                            </button>
+                        </div>
                     </span>
                     
-            <!--    <span class="a1">
+            <!--    <span class="card">
                         <img class='fotos' src="gen dahmer.jpeg" alt="GEN DAHMER"><h3 class="nome1"> GEN DAHMER </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
@@ -43,7 +49,7 @@
                             <img class='seta seta1' id="dahmer-arrow">
                     </span>    -->
 
-                    <span class="a1">
+                    <span class="card">
                         <img class='fotos' src="imagens\gen_wolski.jpg" alt="GEN WOLSKI"><h3 class="nome1"> GEN WOLSKI </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
@@ -53,10 +59,16 @@
                             <button class="button" data-direction="desceu"
                                 onclick="changeArrow('wolski-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
+                        <div class="setaebotao">
                             <img class='seta seta1' id="wolski-arrow">
+                            <button class="estadoCardHtml" id="estadoVch"
+                            onclick="changeEstado('estadoVch')">
+                                Ausente
+                            </button>
+                        </div>
                     </span>
 
-                    <span class="a1">
+                    <span class="card">
                         <img class='fotos' src="imagens\gen mauricio.jpg" alt="GEN MAURÍCIO"><h3 class="nome1"> GEN MAURÍCIO </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
@@ -66,10 +78,16 @@
                             <button class="button" data-direction="desceu"
                                 onclick="changeArrow('mauricio-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
+                        <div class="setaebotao">
                             <img class='seta seta1' id="mauricio-arrow">
+                            <button class="estadoCardHtml" id="estadoChgpg"
+                            onclick="changeEstado('estadoChgpg')">
+                                Ausente
+                            </button>
+                        </div>
                     </span>
 
-                    <span class="a1">
+                    <span class="card">
                         <img class='fotos' src="imagens\cel gilson.jpeg" alt="CEL GILSON"><h3 class="nome1"> CEL GILSON </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
@@ -79,10 +97,16 @@
                             <button class="button" data-direction="desceu"
                                 onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
+                        <div class="setaebotao">
                             <img class='seta seta1' id="gilson-arrow">
+                            <button class="estadoCardHtml" id="estadoChgab"
+                            onclick="changeEstado('estadoChgab')">
+                                Ausente
+                            </button>
+                        </div>
                         </span>
 
-                    <span class="a1">
+                    <span class="card">
                         <img class='fotos' src="imagens\st paiva.jpeg" alt="ST PAIVA"><h3 class="nome1"> ST PAIVA </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
@@ -92,7 +116,13 @@
                             <button class="button" data-direction="desceu"
                                 onclick="changeArrow('adj-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
+                        <div class="setaebotao">
                             <img class='seta seta1' id="adj-arrow">
+                            <button class="estadoCardHtml" id="estadoAdj"
+                            onclick="changeEstado('estadoAdj')">
+                                Ausente
+                            </button>
+                        </div>
                     </span>
                 </div>
             <div id="form-container">
