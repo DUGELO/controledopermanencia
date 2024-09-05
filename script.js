@@ -1,5 +1,4 @@
 var autoridadesExistem = [];
-let ausente = false;
 var estados = {
     estadoCh: false,
     estadoVch: false,
