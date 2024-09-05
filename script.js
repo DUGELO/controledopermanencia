@@ -58,7 +58,7 @@ function addAutoridade() {
         // Adicione o nome à lista de autoridades existentes
         autoridadesExistem.push(nomeAutoridade);
         // Adicione o nome ao objeto de estados
-        estados[nomeDaPropriedade] = true;
+        estados[nomeAutoridade] = false;
 
     // Verificar se o campo de nome está vazio
     if (nomeAutoridade.trim() === "") {
@@ -69,7 +69,7 @@ function addAutoridade() {
     // Crie um novo elemento <span> para a autoridade
     var novoSpan = document.createElement('span');
     novoSpan.className = 'card'; // Aplicar a classe 'card' ao novo span
-
+    
     // Conteúdo dentro do novo span
     novoSpan.innerHTML = `
         <img class='fotos' src="imagens\\homem-militar.png" alt="${nomeAutoridade}"><h3 class="nome1"> ${nomeAutoridade} </h3>
@@ -81,7 +81,7 @@ function addAutoridade() {
         </div>
         <div class="setaebotao">
             <img class='seta visitante-arrow' id="${nomeAutoridade}-arrow">
-            <button class="estado" id="estado"
+            <button class="estadoCardHtml" id="${nomeAutoridade}"
             onclick="changeEstado('${nomeAutoridade}')">
                 Ausente
             </button>
