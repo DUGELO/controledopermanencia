@@ -4,8 +4,7 @@ var estados = {
     estadoVch: false,
     estadoChgpg: false,
     estadoChgab: false,
-    estadoAdj: false,
-    estadoVisitante: false
+    estadoAdj: false
 }
 
 function changeArrow(imgId, direction) {
@@ -58,6 +57,8 @@ function addAutoridade() {
     
         // Adicione o nome à lista de autoridades existentes
         autoridadesExistem.push(nomeAutoridade);
+        // Adicione o nome ao objeto de estados
+        estados[nomeDaPropriedade] = true;
 
     // Verificar se o campo de nome está vazio
     if (nomeAutoridade.trim() === "") {
@@ -67,7 +68,7 @@ function addAutoridade() {
 
     // Crie um novo elemento <span> para a autoridade
     var novoSpan = document.createElement('span');
-    novoSpan.className = 'a1'; // Aplicar a classe 'a1' ao novo span
+    novoSpan.className = 'card'; // Aplicar a classe 'card' ao novo span
 
     // Conteúdo dentro do novo span
     novoSpan.innerHTML = `
@@ -81,7 +82,7 @@ function addAutoridade() {
         <div class="setaebotao">
             <img class='seta visitante-arrow' id="${nomeAutoridade}-arrow">
             <button class="estado" id="estado"
-            onclick="changeEstado('estadoVisitante')">
+            onclick="changeEstado('${nomeAutoridade}')">
                 Ausente
             </button>
         </div>`;
@@ -109,7 +110,19 @@ function cancelar() {
 
 function excluirAutoridade() {
     // função para excluir a autoridade adicionada
+    var nomeAutoridade = document.getElementById('nome-autoridade').value;
     const container = document.getElementById('one');
     const lastChild = container.lastElementChild;
     container.removeChild(lastChild);
+
+        // Verifique se o nome já existe no array e remove caso exista
+        if (autoridadesExistem.includes(nomeAutoridade)) {
+            // Remove o nome da lista de autoridades existentes
+            autoridadesExistem.pop(nomeAutoridade);
+            // Remove o nome do objeto de estados
+            delete estados.nomeAutoridade
+            alert(`${nomeAutoridade} removida com sucesso.`);
+            return;
+        }
+
 }
