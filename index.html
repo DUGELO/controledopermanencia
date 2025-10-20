@@ -7,9 +7,12 @@
     <title>
         Controle do Permanência
     </title>
+    <link href="css/font.css" rel="stylesheet" type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type='text/css'>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
-<link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="script.js"></script>
 
 <body>
     <main>
@@ -18,7 +21,7 @@
             <br>
                 <div id="one" class="one">
                     <span class="card">
-                        <img class="fotos" src="imagens\gen_furlan.jpeg" alt="GEN FURLAN"><h3 class="nome1"> GEN FURLAN </h3>
+                        <img class="fotos" src="imagens\gen hertz.jpeg" alt="GEN HERTZ"><h3 class="nome1"> CH - GEN HERTZ </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
                                 onclick="changeArrow('furlan-arrow', this.getAttribute('data-direction'))">Esquerda</button>
@@ -50,17 +53,17 @@
                     </span>    -->
 
                     <span class="card">
-                        <img class='fotos' src="imagens\gen_wolski.jpg" alt="GEN WOLSKI"><h3 class="nome1"> GEN WOLSKI </h3>
+                        <img class='fotos' src="imagens\gen_porto.jpeg" alt="GEN PORTO"><h3 class="nome1"> V CH - GEN PORTO </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
-                                onclick="changeArrow('wolski-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                                onclick="changeArrow('alan-arrow', this.getAttribute('data-direction'))">Esquerda</button>
                             <button class="button" data-direction="direita"
-                                onclick="changeArrow('wolski-arrow', this.getAttribute('data-direction'))">Direita</button>
+                                onclick="changeArrow('alan-arrow', this.getAttribute('data-direction'))">Direita</button>
                             <button class="button" data-direction="desceu"
-                                onclick="changeArrow('wolski-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                                onclick="changeArrow('alan-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
                         <div class="setaebotao">
-                            <img class='seta seta1' id="wolski-arrow">
+                            <img class='seta seta1' id="alan-arrow">
                             <button class="estadoCardHtml" id="estadoVch"
                             onclick="changeEstado('estadoVch')">
                                 Ausente
@@ -69,17 +72,17 @@
                     </span>
 
                     <span class="card">
-                        <img class='fotos' src="imagens\gen mauricio.jpg" alt="GEN MAURÍCIO"><h3 class="nome1"> GEN MAURÍCIO </h3>
+                        <img class='fotos' src="imagens\ivan.jpeg" alt="GEN IVAN"><h3 class="nome1"> CH GPG - GEN IVAN </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
-                                onclick="changeArrow('mauricio-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                                onclick="changeArrow('ivan-arrow', this.getAttribute('data-direction'))">Esquerda</button>
                             <button class="button" data-direction="direita"
-                                onclick="changeArrow('mauricio-arrow', this.getAttribute('data-direction'))">Direita</button>
+                                onclick="changeArrow('ivan-arrow', this.getAttribute('data-direction'))">Direita</button>
                             <button class="button" data-direction="desceu"
-                                onclick="changeArrow('mauricio-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                                onclick="changeArrow('ivan-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
                         <div class="setaebotao">
-                            <img class='seta seta1' id="mauricio-arrow">
+                            <img class='seta seta1' id="ivan-arrow">
                             <button class="estadoCardHtml" id="estadoChgpg"
                             onclick="changeEstado('estadoChgpg')">
                                 Ausente
@@ -88,17 +91,17 @@
                     </span>
 
                     <span class="card">
-                        <img class='fotos' src="imagens\cel gilson.jpeg" alt="CEL GILSON"><h3 class="nome1"> CEL GILSON </h3>
+                        <img class='fotos' src="imagens\cel_cardoso.jpeg" alt="CEL CARDOSO"><h3 class="nome1"> CH GAB - CEL CARDOSO </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
-                                onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Esquerda</button>
+                                onclick="changeArrow('cardoso-arrow', this.getAttribute('data-direction'))">Esquerda</button>
                             <button class="button" data-direction="direita"
-                                onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Direita</button>
+                                onclick="changeArrow('cardoso-arrow', this.getAttribute('data-direction'))">Direita</button>
                             <button class="button" data-direction="desceu"
-                                onclick="changeArrow('gilson-arrow', this.getAttribute('data-direction'))">Desceu</button>
+                                onclick="changeArrow('cardoso-arrow', this.getAttribute('data-direction'))">Desceu</button>
                         </div>
                         <div class="setaebotao">
-                            <img class='seta seta1' id="gilson-arrow">
+                            <img class='seta seta1' id="cardoso-arrow">
                             <button class="estadoCardHtml" id="estadoChgab"
                             onclick="changeEstado('estadoChgab')">
                                 Ausente
@@ -107,7 +110,7 @@
                         </span>
 
                     <span class="card">
-                        <img class='fotos' src="imagens\st paiva.jpeg" alt="ST PAIVA"><h3 class="nome1"> ST PAIVA </h3>
+                        <img class='fotos' src="imagens\st paiva.jpeg" alt="ST PAIVA"><h3 class="nome1"> ADJ CMDO - ST PAIVA </h3>
                         <div class="div_btn">
                             <button class="button" data-direction="esquerda"
                                 onclick="changeArrow('adj-arrow', this.getAttribute('data-direction'))">Esquerda</button>
@@ -136,6 +139,12 @@
             </div>
 
         </div>
+        <div class="observacoes">
+            <a href="javascript:;" class="button" id="add_new">Add Nova Nota</a>
+            <div id="board">
+      
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -145,6 +154,9 @@
         </p>
     </footer>
 
+
+    <script type="text/javascript" src="js/bloco_de_notas.js"></script>
+    
 </body>
 
 </html>

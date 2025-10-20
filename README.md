@@ -12,3 +12,10 @@ Utilize os botões para interagir com o projeto:
 Os botôes servem como lembretes da localização física das autoridades
 militares do DCT. Existe a opção de adicionar visitantes onde não se pode
 adicionar o mesmo nome Se'nome' == 'nome' e não é possível adicionar um valor vazio.
+
+## Para atualizar o serviço:
+
+### Pesquisar os serviços ativos:
+ps aux | grep "python3 -m http.server"
+### Reiniciar o serviço do controle do permanencia:
+sudo ss -tuln | grep :8000
